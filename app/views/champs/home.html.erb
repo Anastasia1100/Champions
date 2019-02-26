@@ -1,0 +1,53 @@
+<div class="header">
+  <div class="logo">
+    <%= image_tag('frame.png', size: '40x40') %> Champs!
+  </div>
+  <div class="button">СВЯЗАТЬСЯ С НАМИ</div>
+  <div class="header__title">Чемпионы по шахматам</div>
+  <div class="header__slogan">Лучшие из лучших</div>
+  <div class="header__arrow">
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</div>
+
+<% Player.count.times do |i| %>
+    <% @player = Player.find(i+1) %>
+
+    <% if @player.photo.nil? then %>
+        <% @player.years_of_life = "" %>
+        <% @player.photo = "avatar.png" %>
+        <% @player.description = "Просто хороший человек. Порой это ничуть не хуже любой регалии." %>
+        <% @player.wiki = "" %>
+    <% end %>
+
+
+    <div class="player">
+      <div class="container">
+        <div class="photo"> <%= image_tag("#{@player.photo}", size: "375x500") %> </div>
+        <div class="info">
+          <div class="name"><%= "#{@player.name}" %></div>
+          <div class="years_of_life"><%= "#{@player.years_of_life}" %></div>
+          <div class="description"><p><%= "#{@player.description}" %></p></div>
+          <div class="wiki"><%= if @player.wiki.casecmp("")== 1 then
+                                  link_to("Ссылка на Википедию", "#{@player.wiki}")
+                                else
+                                  ""
+                                end %></div>
+        </div>
+      </div>
+    </div>
+<% end %>
+
+<div class="form">
+  <h1>Встать в один ряд с Великими.<br>Пожалуйста, введите свои имя и фамилию через пробел:</h1>
+  <%= form_with(url: root_path, method: "form") do %>
+      <%= text_field_tag(:name) %>
+      <%= submit_tag("Отправить") %>
+  <% end %>
+</div>
+
+<div class="footer">
+  <div class="joke">Ахахах, работающий сайт на Руби,<br>посвящённый шахматам.<br>Шах и мат, аметисты!</div>
+  <div class="ruby"><%= image_tag("Ruby.jpg", size: "267x261") %></div>
+  <div class="vk"><i class="fab fa-vk"></i> Написать в ВК</div>
+</div>
