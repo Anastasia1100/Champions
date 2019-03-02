@@ -22,9 +22,9 @@ test:
 
 production:
   adapter: postgresql
-    encoding: unicode
-    database: champions
-    pool: 5
-      timeout: 5000
-      username: alex
-      password:
+  encoding: unicode
+  database: champions
+  pool: 5
+  timeout: 5000
+  username: alex
+  password: qwerty123
