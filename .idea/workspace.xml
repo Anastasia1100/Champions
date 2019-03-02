@@ -32,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/champs.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="48" />
+              <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -324,12 +324,12 @@
       <workItem from="1551277420996" duration="165000" />
       <workItem from="1551277720432" duration="376000" />
       <workItem from="1551349201483" duration="1334000" />
-      <workItem from="1551534607184" duration="6281000" />
+      <workItem from="1551534607184" duration="6432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99131000" />
+    <option name="totallyTimeSpent" value="99282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="993" y="27" width="927" height="1053" extended-state="4" />
@@ -692,7 +692,7 @@
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/champs.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="48" />
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="42" />
           <folding />
         </state>
       </provider>
